@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90228686-53FD-4491-851A-934F8D57AA3D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>madras_cafe</RootNamespace>
+    <AssemblyName>madras_cafe</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\add_Delete_Category.aspx" />
+    <Content Include="Admin\add_product.aspx" />
+    <Content Include="Admin\assets\css\bootstrap.css" />
+    <Content Include="Admin\assets\css\custom.css" />
+    <Content Include="Admin\assets\css\font-awesome.css" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\assets\img\logo.png" />
+    <Content Include="Admin\assets\js\bootstrap.min.js" />
+    <Content Include="Admin\assets\js\custom.js" />
+    <Content Include="Admin\assets\js\jquery-1.10.2.js" />
+    <Content Include="Admin\delete.aspx" />
+    <Content Include="Admin\display_booktable.aspx" />
+    <Content Include="Admin\Display_feedback.aspx" />
+    <Content Include="Admin\Display_order.aspx" />
+    <Content Include="Admin\logout.aspx" />
+    <Content Include="Admin\test.aspx" />
+    <Content Include="Admin\view_full_order.aspx" />
+    <Content Include="logincss\style.css" />
+    <Content Include="User\book_table.aspx" />
+    <Content Include="User\checkout.aspx" />
+    <Content Include="User\css\ie6.css" />
+    <Content Include="User\css\images\big1.jpg" />
+    <Content Include="User\css\images\big2.jpg" />
+    <Content Include="User\css\images\big3.jpg" />
+    <Content Include="User\css\images\body.gif" />
+    <Content Include="User\css\images\bul.gif" />
+    <Content Include="User\css\images\cart-link.gif" />
+    <Content Include="User\css\images\cat.gif" />
+    <Content Include="User\css\images\h2-arr.gif" />
+    <Content Include="User\css\images\header.gif" />
+    <Content Include="User\css\images\ico1.gif" />
+    <Content Include="User\css\images\ico2.gif" />
+    <Content Include="User\css\images\ico3.gif" />
+    <Content Include="User\css\images\ico4.gif" />
+    <Content Include="User\css\images\info.png" />
+    <Content Include="User\css\images\logo.gif" />
+    <Content Include="User\css\images\next.gif" />
+    <Content Include="User\css\images\prev.gif" />
+    <Content Include="User\css\images\slide1.jpg" />
+    <Content Include="User\css\images\small1.jpg" />
+    <Content Include="User\css\images\small2.jpg" />
+    <Content Include="User\css\images\small3.jpg" />
+    <Content Include="User\css\images\small4.jpg" />
+    <Content Include="User\css\images\small5.jpg" />
+    <Content Include="User\css\images\small6.jpg" />
+    <Content Include="User\css\images\small7.jpg" />
+    <Content Include="User\css\style.css" />
+    <Content Include="User\delete_cart.aspx" />
+    <Content Include="User\display_product.aspx" />
+    <Content Include="User\feedback.aspx" />
+    <Content Include="User\GenPDF.aspx" />
+    <Content Include="User\js\jquery-1.4.1.min.js" />
+    <Content Include="User\js\jquery-func.js" />
+    <Content Include="User\js\jquery.jcarousel.pack.js" />
+    <Content Include="User\login.aspx" />
+    <Content Include="User\logout.aspx" />
+    <Content Include="User\order_details.aspx" />
+    <Content Include="User\payment_failed.aspx" />
+    <Content Include="User\payment_success.aspx" />
+    <Content Include="User\product_desc.aspx" />
+    <Content Include="User\registration.aspx" />
+    <Content Include="User\testing.aspx" />
+    <Content Include="User\update_order_details.aspx" />
+    <Content Include="User\view_cart.aspx" />
+    <Content Include="User\view_full_order.aspx" />
+    <Content Include="User\Web.config" />
+    <Content Include="User\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="User\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\add_Delete_Category.aspx.cs">
+      <DependentUpon>add_Delete_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add_Delete_Category.aspx.designer.cs">
+      <DependentUpon>add_Delete_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add_product.aspx.cs">
+      <DependentUpon>add_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add_product.aspx.designer.cs">
+      <DependentUpon>add_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\display_booktable.aspx.cs">
+      <DependentUpon>display_booktable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\display_booktable.aspx.designer.cs">
+      <DependentUpon>display_booktable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Display_feedback.aspx.cs">
+      <DependentUpon>Display_feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Display_feedback.aspx.designer.cs">
+      <DependentUpon>Display_feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Display_order.aspx.cs">
+      <DependentUpon>Display_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Display_order.aspx.designer.cs">
+      <DependentUpon>Display_order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\view_full_order.aspx.cs">
+      <DependentUpon>view_full_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\view_full_order.aspx.designer.cs">
+      <DependentUpon>view_full_order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\book_table.aspx.cs">
+      <DependentUpon>book_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\book_table.aspx.designer.cs">
+      <DependentUpon>book_table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\delete_cart.aspx.cs">
+      <DependentUpon>delete_cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\delete_cart.aspx.designer.cs">
+      <DependentUpon>delete_cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\display_product.aspx.cs">
+      <DependentUpon>display_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\display_product.aspx.designer.cs">
+      <DependentUpon>display_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\GenPDF.aspx.cs">
+      <DependentUpon>GenPDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\GenPDF.aspx.designer.cs">
+      <DependentUpon>GenPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\order_details.aspx.cs">
+      <DependentUpon>order_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\order_details.aspx.designer.cs">
+      <DependentUpon>order_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\payment_failed.aspx.cs">
+      <DependentUpon>payment_failed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\payment_failed.aspx.designer.cs">
+      <DependentUpon>payment_failed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\payment_success.aspx.cs">
+      <DependentUpon>payment_success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\payment_success.aspx.designer.cs">
+      <DependentUpon>payment_success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\product_desc.aspx.cs">
+      <DependentUpon>product_desc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\product_desc.aspx.designer.cs">
+      <DependentUpon>product_desc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\testing.aspx.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\testing.aspx.designer.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\update_order_details.aspx.cs">
+      <DependentUpon>update_order_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\update_order_details.aspx.designer.cs">
+      <DependentUpon>update_order_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\view_cart.aspx.cs">
+      <DependentUpon>view_cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\view_cart.aspx.designer.cs">
+      <DependentUpon>view_cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\view_full_order.aspx.cs">
+      <DependentUpon>view_full_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\view_full_order.aspx.designer.cs">
+      <DependentUpon>view_full_order.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Admin\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="Admin\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="Admin\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="Admin\assets\fonts\FontAwesome.otf" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="web.config" />
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User\user.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23164</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
