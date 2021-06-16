@@ -1,4 +1,4 @@
-# CAFÉ MANAGEMANT SYSTEM (MADRAS CAFE) 
+# CAFE MANAGEMANT SYSTEM (MADRAS CAFE) 
 
 This system is designed to manage various activities will be happening under the staff and admin in cafe. 
 When any person wants to order online so they can order it through this system. When any person wants to book table online so they can book 
